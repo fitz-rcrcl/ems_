@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #dfe0f5;
+    
+}
+
+.container{
+    display: flex;
+    color: #000;
+}
+
+.main-futures{
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+/* main box */
+.futures-box {
+    position: relative;
+    width: 70vw; 
+    min-height: 100vh; 
+    max-height: 200vh;
+    padding: 5%;
+    margin-top: 5vh; 
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+
+.futures-box ul{
+    list-style: none;
+    display: flex;
+}
+
+.futures-box ul li{
+    margin: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.futures-box ul .active{
+    color: #000 ;
+    border-bottom: 1px solid #000;
+}
+
+.futures-box .course{
+    display: flex;
+}
+
+/* box sa loob */
+.box{
+    width: 900vw;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to left, #0f90ec, #d5dfff);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(43, 106, 189);}
+
+.course .p{
+    font-size: 10px;
+    font-weight: 10px;
+    margin-top: 5px;
+
+}
+
+.radio-icon img {
+    max-width: 50px; 
+    max-height: 50px; 
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 60vw;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-icon {
+    margin-right: 10px;
+}
+
+input[type="radio"]:checked + span {
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    background-color: #d5dfff;
+    width: 250px;
+}
+
+input[type="radio"]:checked + span::after {
+    content: '\2022';
+    font-size: 20px;
+    color: #3498db;
+    top: -2px;
+    left: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 5px; 
+}
+
+.input-box {
+    border: 2px solid rgb(218, 218, 218);
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px; 
+    box-sizing: border-box;
+    margin: 2px; 
+}
+
+.input-box input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.qr-code {
+    margin-top: 30px;
+    text-align: center; 
+}
+
+.qr-code img {
+    width: 20vw;
+    height: 45vh;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.qr-code button {
+    color: #fff;
+    font-size: 16px;
+    width: 20vw;
+    height: 10vh;
+    display: block; 
+    margin: 0 auto; 
+    border: 2px solid rgb(0, 153, 255);
+    border-radius: 20px;
+    background: linear-gradient(to left, rgb(0, 81, 255), rgb(93, 217, 255)) ;
+}
