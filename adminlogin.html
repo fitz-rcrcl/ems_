@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="ccc-home-logo.png"/>
+    <title>CCC-EMS</title>
+    
+    <style>
+
+        /* gamit daw qr attendance using google sheets */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('TMS.png');
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+          
+        }
+
+            /* para dun sa box na blue*/
+        .wrapper {
+            display: flex;
+            width: 620px;
+            background: linear-gradient(to right, #66bfff, #004aad);
+            color: white;
+            border-radius: 10px;
+            padding: 30px 20px;
+            align-items: center;
+        }
+
+        .wrapper h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        /* input box yung border */
+        .wrapper .input-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 10px 0;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 40px;
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+            padding: 20px 45px 20px 20px;
+        }
+
+        /* eto yung mata */
+        .input-box img {
+            width: 20px;
+            cursor: pointer;
+        }
+        /* username at password */
+        .input-box input::placeholder {
+            color: rgb(255, 255, 255);
+        }
+
+        .input-box i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+        }
+
+
+        .wrapper .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: 5px 0 15px;
+        }
+
+        .remember-forgot label input {
+            accent-color: rgb(255, 255, 255);
+            margin-right: 3px;
+        }
+
+        .remember-forgot a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .remember-forgot a:hover {
+            text-decoration: underline;
+        }
+
+        .wrapper .login-link {
+            font-size: 14.5px;
+            text-align: center;
+            margin: 20px 0 15px;
+        }
+
+        .login-link p a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .login-link p a:hover {
+            text-decoration: underline;
+        }
+
+        .wrapper .btn {
+            width: 100%;
+            height: 45px;
+            background: rgb(255, 255, 255);
+            border: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            padding: 10px;
+           
+        }
+
+        .logo img {
+            max-width: 150px;
+            max-height: 150px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="ccc-home-logo.png" alt="School Logo">
+        </div>
+
+        <form action="">
+            <h3><font size="5px">Event Management System</font></h3>
+            
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            
+            <div class="input-box">
+                <input type="password" placeholder="Password" id="password" required>
+                <img src="eye3.png" id="eyeicon" style="position: absolute; right: 30px; top: 50%; transform: translateY(-50%);">
+            </div>
+            
+            <script>
+                let eyeicon = document.getElementById("eyeicon");
+                let password = document.getElementById("password");
+                eyeicon.onclick = function(){
+                    if(password.type == "password"){
+                        password.type = "text";
+                        eyeicon.src = "eye4.png";
+                    }
+                    else{
+                        password.type = "password";
+                        eyeicon.src = "eye3.png";
+                    }
+                }
+            </script>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="Forgot Password.html">Forgot Password?</a>
+            </div>
+            <a style="text-decoration: none;" href="a.html">
+            <button type="submit" class="btn" href="a.html">Log In</a></button>
+
+            <div class="login-link">
+                <p>Login as User? <a href="Loginpagenamin.html">Here</a></p>
+            </div>
+
+
+
+        </form>
+    </div>
+</body>
+</html>

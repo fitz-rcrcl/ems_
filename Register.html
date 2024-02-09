@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="ccc-home-logo.png">
+    <title>Register</title>
+    
+    <style>
+        * {
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('TMS.png');
+            background-position: center;
+            background-size: cover;
+            margin: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            color: black;
+            background: linear-gradient(to right, #66bfff, #004aad);
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        .wrapper .input-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 0;
+            padding: 1px;
+        }
+
+        .wrapper .btn {
+            width: 50%;
+            height: 45px;
+            background: linear-gradient(to right, #66bfff, #004aad);
+            border: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            
+        }
+
+        .input-box input {
+            width: 70%;
+            height: 10%;
+            background: linear-gradient(to right, #66bfff, #004aad);
+            border: none;
+            outline: none;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 45px;
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+            padding: 15px 45px 20px 20px;
+        }
+
+        .input-box img {
+            width: 20px;
+            cursor: pointer;
+        }
+        
+        .input-box input::placeholder {
+            color: rgb(255, 255, 255);
+        }
+
+        .input-box i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">   
+        
+        <div class="logo">
+            <a href="Loginpagenamin.html">
+            <img src="ccc-home-logo.png" alt="School Logo"></a>
+        </div>
+        
+        <h3><font color="white">REGISTER</font></h3>
+        
+        <form action="">
+        
+        <div class="input-box">
+            <input type="text" placeholder="First Name" required>
+            <i class='bx bxs-user'></i>
+        </div>
+        
+        <div class="input-box">
+            <input type="text" placeholder="Last Name" required>
+            <i class='bx bxs-user'></i>
+        </div>
+        
+        <div class="input-box">
+            <input type="text" placeholder="School ID Number" required>
+            <i class='bx bxs-user'></i>
+        </div>
+        
+        <div class="input-box">
+            <input type="email" placeholder="CCC Email Address" required>
+            <i class='bx bxs-user'></i>
+        </div>
+        
+        <div class="input-box">
+            <input type="text" placeholder="Contact Number" required>
+            <i class='bx bxs-user'></i>
+        </div>
+        
+        <div class="input-box">
+            <input type="text" placeholder="Create Username" required>
+            <i class='bx bxs-lock-alt' ></i>
+        </div>
+        
+        <div class="input-box">
+            <input type="password" maxlength="10" placeholder="Create New Password" id="password" required>
+            <img src="eye3.png" id="eyeicon" style="position: absolute; right: 40px; top: 40%; transform: translateY(-50%);">
+        </div>
+        
+        <script>
+            let eyeicon = document.getElementById("eyeicon");
+            let password = document.getElementById("password");
+            eyeicon.onclick = function(){
+                if(password.type == "password"){
+                    password.type = "text";
+                    eyeicon.src = "eye3.png";
+                }
+                else{
+                    password.type = "password";
+                    eyeicon.src = "eye4.png";
+                }
+            }
+        </script>
+        
+        <div>
+            <input type="radio" value="event" name="event" required><font color=white>Event Organizer</input> 
+            <input type="radio" value="event" name="event" required>Customer</input> </font>
+        </div>
+        
+        <div class="input-box">
+            <a style="text-decoration: none; color: white;" href="Loginpagenamin.html">
+            <button type="submit" class="btn">Sign Up</a></button>
+        </div>
+        
+    </form>
+</body>
+</html>

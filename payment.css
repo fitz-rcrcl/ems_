@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #dfe0f5;
+    
+}
+
+.container{
+    display: flex;
+    color: #000;
+}
+
+nav{
+    position: relative;
+    top: 0  ;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    background: #fff;
+    width: 280px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 10px;
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+a{
+    position: relative;
+    color: rgb(75, 73, 73);
+    display: table;
+    width: 280px;
+    padding: 20px;
+}
+
+nav .fas{
+    position: relative;
+    width: 80px;
+    height: 50px;
+    top: 17px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+
+.special-link:hover {
+    background-color: #2575d1;
+    color: white;
+}
+
+
+.logout{
+    position: absolute;
+    bottom: 0;
+}
+
+
+.main-futures{
+    margin-top: 40px;
+    margin-left: 40px;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+/* main box */
+.futures-box{
+    width: 900px;
+    padding: 45px;
+    margin-left: 50px;
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    
+}
+
+.futures-box ul{
+    list-style: none;
+    display: flex;
+}
+
+.futures-box ul li{
+    margin: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.futures-box ul .active{
+    color: #000 ;
+    border-bottom: 1px solid #000;
+}
+
+.futures-box .course{
+    display: flex;
+}
+
+/* box sa loob */
+.box{
+    width: 33%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background: rgb(235, 233, 233);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.box p{
+    font-size: 12px;
+    margin-top: 5px;
+
+}
+
+.box button{
+    background: linear-gradient(to right, #66bfff, #004aad);
+    color: #fff;
+    padding: 7px 10px;
+    border-radius:  10px;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.box button:hover{
+    background: rgba(0, 0, 0, 0.842);
+}
+.box i{
+    font-size: 7rem;
+    float: right;
+    margin: 20px 20px 20px 0;
+}
+
+.class-statement {
+    margin-top: 50px;
+    font-size: 15px;
+}
